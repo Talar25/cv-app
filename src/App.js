@@ -1,25 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import CvForm from "./components/CVForm/CvForm.js";
+import CvView from "./components/CVView/CvView.js";
 
-function App() {
+export default function App() {
+  const [name, setName] = useState("");
+  const [aboutMe, setAboutMe] = useState("");
+  const [number, setNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [experience, setExperience] = useState([]);
+  const [education, setEducation] = useState([]);
+  const [skills, setSkills] = useState([]);
+  const [interests, setInterests] = useState([]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <>
+      <header className="header">CV Application</header>
+      <div className="container">
+        <CvForm
+          name={name}
+          setName={setName}
+          aboutMe={aboutMe}
+          setAboutMe={setAboutMe}
+          number={number}
+          setNumber={setNumber}
+          email={email}
+          setEmail={setEmail}
+          experience={experience}
+          setExperience={setExperience}
+          education={education}
+          setEducation={setEducation}
+          skills={skills}
+          setSkills={setSkills}
+          interests={interests}
+          setInterests={setInterests}
+        />
+        <CvView
+          name={name}
+          aboutMe={aboutMe}
+          number={number}
+          email={email}
+          experience={experience}
+          education={education}
+          skills={skills}
+          interests={interests}
+        />
+      </div>
+      <footer className="footer">
+        <a href="https://github.com/Talar25">
+          <p>
+            Copyright ©{" "}
+            <script>document.write(new Date().getFullYear())</script> Talar25
+          </p>
         </a>
-      </header>
-    </div>
+      </footer>
+    </>
   );
 }
-
-export default App;

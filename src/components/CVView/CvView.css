@@ -1,0 +1,115 @@
+.view {
+  background-color: var(--white-color);
+  padding: 7rem 6rem;
+  box-shadow: 3px 3px 30px 10px rgba(0, 0, 0, 0.21);
+  max-height: 100rem;
+}
+
+.heading-primary,
+.heading-secondary,
+.job-title {
+  color: var(--primary-color);
+}
+
+.heading-primary {
+  font-size: 4rem;
+  font-weight: 900;
+  border-bottom: 2px solid var(--secondary-color);
+  color: var(--primary-color-dark);
+  overflow-wrap: break-word;
+}
+
+.heading-secondary {
+  font-size: 2.4rem;
+  display: inline-block;
+  padding: 1rem 0 1rem;
+  letter-spacing: 0.9px;
+}
+
+.heading__paragraph {
+  line-height: 1.6;
+  font-size: 1.15em;
+  overflow-wrap: break-word;
+}
+
+.main-view {
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: 6rem;
+}
+
+.job,
+.education-item {
+  list-style: none;
+  border-left: 3px solid var(--secondary-color-lighter);
+  padding-left: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.job-and-time,
+.education-and-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2em;
+  padding-bottom: 0.5rem;
+}
+
+.job-title,
+.education-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.education {
+  grid-column: 1;
+}
+
+.info {
+  grid-row: 1 / span 2;
+  grid-column: 2;
+  padding-top: 1.2rem;
+
+  font-size: 1.5rem;
+}
+
+.info .contact {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.contact .heading-tertiary {
+  padding-bottom: 0.4rem;
+  font-size: 2.2rem;
+}
+
+.contact > * {
+  padding-bottom: 0.2rem;
+}
+
+.contact__number,
+.contact__email {
+  letter-spacing: -0.3px;
+  font-size: 0.85em;
+}
+
+.heading-quaternany {
+  margin-top: 3rem;
+  padding-bottom: 0.9rem;
+  font-size: 2.1rem;
+  color: var(--primary-color-dark);
+}
+
+.info-set {
+  padding-left: 2rem;
+  list-style: square;
+}
+
+.info-set li {
+  margin-bottom: 0.6rem;
+  font-size: 1.45rem;
+}

@@ -1,0 +1,45 @@
+.container {
+  max-width: 150rem;
+  margin: 10rem auto;
+
+  display: grid;
+  column-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: var(--primary-color-darker);
+  font-size: 3rem;
+  font-weight: 900;
+  padding: 1rem;
+}
+
+.footer {
+  height: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--primary-color);
+}
+
+.footer p {
+  color: var(--secondary-color-lighter);
+  font-size: 2rem;
+  transition: 0.3s all;
+}
+
+.footer p:hover {
+  color: var(--secondary-color);
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}

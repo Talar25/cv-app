@@ -1,0 +1,115 @@
+.Cv--form {
+  padding: 4rem 3rem;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--white-color);
+}
+
+.Cv--form section {
+  margin-bottom: 2rem;
+}
+
+.form,
+.experience,
+.education {
+  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.form:nth-of-type(2) {
+  border-top: none;
+}
+
+.form .heading-secondary,
+.heading-secondary.exp,
+.heading-secondary.edu {
+  padding-bottom: 0.2rem;
+  margin-bottom: 2rem;
+  color: var(--secondary-color-dark);
+}
+
+.form input,
+.form textarea {
+  padding: 0.5rem;
+  display: flex;
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+}
+
+.form input:focus:invalid,
+.form textarea:focus:invalid {
+  border: 2px solid var(--red-color);
+}
+
+.form textarea {
+  height: 10rem;
+  resize: none;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border: 1px solid var(--secondary-color);
+  background-color: var(--secondary-color-background);
+
+  outline: none !important;
+  border: 2px solid var(--secondary-color);
+}
+
+.form input:focus::placeholder,
+.form textarea:focus::placeholder {
+  color: var(--secondary-color-dark);
+}
+
+.btn {
+  padding: 0.7rem;
+  margin-bottom: 0.5rem;
+  color: var(--white-color);
+  background-color: var(--primary-color-light);
+  border: 1px solid var(--primary-color-lighter);
+  font-size: 1.4rem;
+  transition: 0.2s all;
+}
+
+.btn:hover {
+  background-color: var(--primary-color-dark);
+  transform: scale(1.005);
+}
+
+.btn:active {
+  background-color: var(--primary-color-darker);
+  transform: scale(0.99);
+}
+
+.skills,
+.interests,
+.exp-list,
+.edu-list {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.skill {
+  color: var(--primary-color-darker);
+  font-weight: 900;
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  display: inline-block;
+  outline: 1px solid black;
+  transition: 0.5s all;
+  background-color: var(--secondary-color);
+}
+
+.skill:hover {
+  background-color: var(--white-color);
+}
+
+.skill__cancel {
+  margin-left: 1.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+}
